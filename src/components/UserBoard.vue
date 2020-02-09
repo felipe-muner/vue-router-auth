@@ -1,7 +1,8 @@
 <template>
   <div class="hello">
-    <h1>This is homepage</h1>
+    <h1>Welcome to regular users page</h1>
     <h2>{{msg}}</h2>
+    {{loc}}
   </div>
 </template>
 
@@ -9,12 +10,18 @@
 export default {
   data() {
     return {
-      msg: "Hello World!"
+      msg: "The commoners"
     };
+  },
+  computed: {
+    loc: function() {
+      return this;
+    }
   }
 };
 </script>
-    <!-- Add "scoped" attribute to limit CSS to this component only -->
+
+<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 h1,
 h2 {

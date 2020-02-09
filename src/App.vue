@@ -1,14 +1,21 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link class="ma-5" to="/">Home</router-link>
+      <router-link class="ma-5" to="/about">About</router-link>
+      <router-link class="ma-5" to="/register">register</router-link>
+      <router-link class="ma-5" to="/login">login</router-link>
+      <router-link class="ma-5" to="/dashboard">dashboard</router-link>
+      <router-link class="ma-5" to="/admin">Admin</router-link>
     </div>
-    <router-view/>
+    <router-view />
   </div>
 </template>
 
-<style>
+<style scoped>
+.ma-5 {
+  margin: 5px;
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
